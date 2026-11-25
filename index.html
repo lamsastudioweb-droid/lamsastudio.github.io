@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Lamsa Studio — websites with a distinct look for small businesses. مواقع بهوية مميزة للأعمال الصغيرة.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f3f4fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1024" media="(prefers-color-scheme: dark)">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:title" content="Lamsa Studio · لمسة ستوديو">
+<meta property="og:description" content="Websites with a distinct look, built for small businesses.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%233b3df0'/%3E%3Ctext x='50' y='70' font-size='62' font-family='sans-serif' font-weight='800' text-anchor='middle' fill='white'%3EL%3C/text%3E%3C/svg%3E">
+<title>Lamsa Studio</title>
+<style>
+:root{--bg:#f3f4fb;--surface:#ffffff;--ink:#14143a;--muted:#55587a;--line:#d5d8ea;--accent:#3b3df0;--on-accent:#ffffff;--glow:#ff9d3c;color-scheme:light;
+--display:"Bricolage Grotesque","Readex Pro",system-ui,sans-serif;--body:"Readex Pro",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Geeza Pro",Tahoma,Roboto,Arial,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1024;--surface:#1a1b3a;--ink:#eceefb;--muted:#a3a7cf;--line:#2c2e5a;--accent:#8f91ff;--on-accent:#0f1024;--glow:#ffb86b;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1024;--surface:#1a1b3a;--ink:#eceefb;--muted:#a3a7cf;--line:#2c2e5a;--accent:#8f91ff;--on-accent:#0f1024;--glow:#ffb86b;color-scheme:dark}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 4.5rem);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{-webkit-tap-highlight-color:transparent;-webkit-font-smoothing:antialiased;margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.7;font-size:1.05rem}
+body::before{content:"";position:fixed;top:0;left:0;right:0;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+:lang(ar) h1,:lang(ar) h2,:lang(ar) h3{font-family:var(--body);font-weight:600}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:68rem;margin-left:auto;margin-right:auto;padding-left:1.25rem;padding-right:1.25rem;margin-inline:auto;padding-inline:1.25rem}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:4rem}
+.logo{font-family:var(--display);font-weight:800;font-size:1.3rem;text-decoration:none}
+:lang(ar) .logo{font-family:var(--body)}
+nav{display:flex;align-items:center;gap:1.5rem}
+nav a{text-decoration:none;color:var(--muted);font-size:.95rem}
+nav a:hover{color:var(--ink)}
+.lang{font:inherit;font-size:.95rem;font-weight:600;background:none;color:var(--ink);border:1.5px solid var(--ink);border-radius:999px;padding:.35rem 1rem;cursor:pointer}
+.lang:hover{background:var(--ink);color:var(--bg)}
+@media (max-width:760px){nav a{display:none}}
+.hero{--x:30%;--y:40%;padding-top:3rem;padding-bottom:4rem;padding-block:clamp(2.5rem,7vw,5rem) clamp(3rem,8vw,6rem);touch-action:pan-y}
+.mark{margin:0;font-family:var(--display);font-weight:800;font-size:clamp(5.5rem,27vw,20rem);line-height:.95;letter-spacing:-.04em;color:var(--ink);padding-top:.05em;padding-bottom:.05em;padding-block:.05em}
+:lang(ar) .mark{letter-spacing:0;line-height:1.25;font-size:clamp(5rem,24vw,17rem)}
+@supports (background-clip:text) or (-webkit-background-clip:text){.mark{background:-webkit-radial-gradient(circle 22rem at var(--x) var(--y),var(--glow) 0,var(--accent) 38%,var(--ink) 75%);background:radial-gradient(circle 22rem at var(--x) var(--y),var(--glow) 0,var(--accent) 38%,var(--ink) 75%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}}
+.lead{max-width:34rem;font-size:clamp(1.25rem,3vw,1.7rem);line-height:1.5;margin:1.5rem 0 2rem;font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;text-decoration:none;font-weight:600;padding:.8rem 1.6rem;border-radius:999px;border:1.5px solid var(--accent);background:var(--accent);color:var(--on-accent)}
+.btn.alt{background:none;color:var(--ink);border-color:var(--ink)}
+.btn:hover{filter:brightness(1.1)}
+section{padding-top:4rem;padding-bottom:4rem;padding-block:clamp(3rem,7vw,5.5rem);border-top:1px solid var(--line)}
+h2{font-family:var(--display);font-size:clamp(2rem,5vw,3.2rem);line-height:1.15;margin:0 0 1.5rem;letter-spacing:-.02em}
+:lang(ar) h2{letter-spacing:0}
+.note{color:var(--muted);max-width:38rem;margin:0 0 2rem}
+.row{display:grid;grid-template-columns:1fr;gap:.4rem 2rem;padding-top:1.4rem;padding-bottom:1.4rem;border-top:1px solid var(--line)}
+.row:last-of-type{border-bottom:1px solid var(--line)}
+.row h3{margin:0;font-family:var(--display);font-size:1.5rem}
+.row p{margin:0;color:var(--muted)}
+.row b{font-weight:600}
+@media (min-width:820px){.row{grid-template-columns:1fr 1.6fr 1fr;align-items:baseline}}
+.mocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.5rem;align-items:start}
+.mock{min-height:15rem;padding:1.2rem;display:flex;flex-direction:column;justify-content:space-between;color:#1b1209}
+.mock i{display:flex;gap:.35rem}
+.mock i::before,.mock i::after,.mock i span{content:"";width:.6rem;height:.6rem;border-radius:50%;background:currentColor;opacity:.35;display:block}
+.mock strong{font-family:var(--display);font-size:1.9rem;line-height:1.1}
+.mock em{display:block;width:45%;height:.55rem;border-radius:9px;background:currentColor;opacity:.4;margin-top:.9rem;font-style:normal}
+.m1{background:#ffcf8b;border-radius:.4rem}
+.m2{background:#bfe7dd;border-radius:2rem;color:#0c2b27}
+.m3{background:#1a1a2e;color:#e9e6ff;border-radius:0 3rem 0 3rem}
+.m3 strong{color:#c8ff4d}
+figcaption{margin-top:.6rem;color:var(--muted);font-size:.95rem}
+figure{margin:0}
+ol{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;gap:1rem;max-width:40rem}
+li{counter-increment:s;display:flex;gap:1.2rem;align-items:baseline;font-size:1.15rem}
+li::before{content:counter(s);font-family:var(--display);font-weight:800;font-size:2.2rem;color:var(--accent);min-width:2.2rem;line-height:1}
+.about{max-width:38rem;font-size:1.2rem}
+.contact a.big{display:block;font-family:var(--display);font-weight:800;font-size:clamp(1.6rem,5vw,3rem);text-decoration:none;padding-top:.5rem;padding-bottom:.5rem;border-bottom:1px solid var(--line);word-break:break-word;overflow-wrap:anywhere}
+.contact a.big:hover{color:var(--accent)}
+.contact a.big[href^="mailto"]{font-size:clamp(1.05rem,5.4vw,2.2rem);word-break:normal;overflow-wrap:normal}
+footer{padding-top:2rem;padding-bottom:2rem;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#top" data-en="Lamsa Studio" data-ar="لمسة ستوديو">Lamsa Studio</a>
+<nav>
+<a href="#services" data-en="Services" data-ar="الخدمات">Services</a>
+<a href="#work" data-en="Work" data-ar="الأعمال">Work</a>
+<a href="#process" data-en="Process" data-ar="طريقة العمل">Process</a>
+<a href="#contact" data-en="Contact" data-ar="تواصل">Contact</a>
+<button class="lang" id="lang" type="button" aria-label="Switch language">العربية</button>
+</nav>
+</div></header>
+
+<main id="top">
+<div class="wrap hero" id="hero">
+<h1 class="mark" data-en="Lamsa" data-ar="لمسة">Lamsa</h1>
+<p class="lead" data-en="Websites with a distinct look, built for small businesses." data-ar="مواقع بهوية مميزة، مصممة للأعمال الصغيرة.">Websites with a distinct look, built for small businesses.</p>
+<div class="btns">
+<a class="btn" href="#contact" data-en="Start a project" data-ar="ابدأ مشروعك">Start a project</a>
+<a class="btn alt" href="#work" data-en="See concepts" data-ar="شاهد التصاميم">See concepts</a>
+</div>
+</div>
+
+<section id="services"><div class="wrap">
+<h2 data-en="What I do" data-ar="ماذا أقدّم">What I do</h2>
+<div class="row"><h3 data-en="Landing page" data-ar="صفحة هبوط">Landing page</h3><p data-en="A single page built around one goal: getting visitors to contact you or buy from you. A clear message, a strong design, and fast loading on mobile." data-ar="صفحة واحدة مبنية حول هدف واحد: أن يتواصل معك الزائر أو يشتري منك. رسالة واضحة، وتصميم قوي، وسرعة في التحميل على الجوال.">A single page built around one goal: getting visitors to contact you or buy from you. A clear message, a strong design, and fast loading on mobile.</p><p><b data-en="Launching a business, an offer or a campaign" data-ar="لمن يطلق مشروعاً أو عرضاً أو حملة">Launching a business, an offer or a campaign</b></p></div>
+<div class="row"><h3 data-en="Business website" data-ar="موقع كامل">Business website</h3><p data-en="A complete website with the pages your business needs: services, about, gallery and contact. I design it in Arabic and English so every customer can read it comfortably." data-ar="موقع متكامل بالصفحات التي يحتاجها نشاطك: الخدمات، من نحن، المعرض، والتواصل. أصممه بالعربية والإنجليزية ليقرأه كل عميل براحة.">A complete website with the pages your business needs: services, about, gallery and contact. I design it in Arabic and English so every customer can read it comfortably.</p></div>
+<div class="row"><h3 data-en="Redesign" data-ar="إعادة تصميم">Redesign</h3><p data-en="I rebuild an outdated site so it looks current." data-ar="أعيد بناء موقعك القديم ليبدو عصرياً.">I rebuild an outdated site so it looks current.</p><p><b data-en="Businesses whose current site no longer does them justice" data-ar="لمن لا يعبّر موقعه الحالي عن مستوى نشاطه">Businesses whose current site no longer does them justice</b></p></div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<h2 data-en="Sample projects" data-ar="مشاريع تجريبية">Sample projects</h2>
+<p class="note" data-en="Complete websites for fictional businesses, built to show different styles. Real client projects will appear here." data-ar="مواقع كاملة لأعمال وهمية، صُمّمت لتُظهر أساليب مختلفة. ستظهر هنا مشاريع العملاء الحقيقية.">Complete websites for fictional businesses, built to show different styles. Real client projects will appear here.</p>
+<div class="mocks">
+<figure><a href="https://claude.ai/artifact/1yMUKbkieLwSYAZdrPUWUY" aria-label="Mazaj Café" style="display:block;text-decoration:none;color:inherit"><div class="mock" style="background:#0f3d3a;color:#ffd84d;border-radius:2rem;min-height:18rem"><i><span></span></i><div><strong style="font-size:clamp(2.4rem,8vw,4.5rem)" data-en="Mazaj Café" data-ar="مقهى مزاج">Mazaj Café</strong><em></em></div></div></a><figcaption data-en="Open the sample website, then pick a mood." data-ar="افتح الموقع التجريبي ثم اختر مزاجك.">Open the sample website, then pick a mood.</figcaption></figure>
+<figure><a href="https://claude.ai/artifact/XWbNEm4vn3bFdq1FsTfnhU" aria-label="Three Worlds" style="display:block;text-decoration:none;color:inherit"><div class="mock" style="background:linear-gradient(135deg,#ff4f9a 0 34%,#127a4d 34% 67%,#d9822b 67%);color:#1a0b2e;border-radius:0 3rem 0 3rem;min-height:18rem"><i><span></span></i><div><strong style="font-size:clamp(2.4rem,8vw,4.5rem)" data-en="Three Worlds" data-ar="ثلاثة عوالم">Three Worlds</strong><em></em></div></div></a><figcaption data-en="Open the games guide, then switch between GTA VI, FC 27 and RDR2." data-ar="افتح دليل الألعاب ثم انتقل بين GTA 6 وFC 27 وRDR2.">Open the games guide, then switch between GTA VI, FC 27 and RDR2.</figcaption></figure>
+
+
+</div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<h2 data-en="How we work" data-ar="طريقة العمل">How we work</h2>
+<ol>
+<li data-en="We talk about your business and goals." data-ar="نتحدث عن نشاطك وأهدافك.">We talk about your business and goals.</li>
+<li data-en="I design a look and send you a preview." data-ar="أصمم الشكل وأرسل لك معاينة.">I design a look and send you a preview.</li>
+<li data-en="I build the site and adjust it with your notes." data-ar="أبني الموقع وأعدّله حسب ملاحظاتك.">I build the site and adjust it with your notes.</li>
+<li data-en="We launch it on your own domain." data-ar="نطلقه على نطاقك الخاص.">We launch it on your own domain.</li>
+</ol>
+</div></section>
+
+<section id="about"><div class="wrap">
+<h2 data-en="Who’s behind Lamsa" data-ar="من وراء لمسة">Who’s behind Lamsa</h2>
+<p class="about" data-en="Lamsa means “a touch,” and that’s the idea: one thoughtful touch that makes your business look professional online. I design and build modern websites for small businesses. Every project starts with your goals and ends with a site that looks distinct. I give each site my full attention." data-ar="اسم «لمسة» هو الفكرة نفسها: لمسة واحدة مدروسة تجعل نشاطك يبدو احترافياً على الإنترنت. أصمم وأبني مواقع حديثة للأعمال الصغيرة. يبدأ كل مشروع من أهدافك وينتهي بموقع بهوية مميزة. أمنح كل موقع اهتمامي الكامل.">Lamsa means “a touch,” and that’s the idea: one thoughtful touch that makes your business look professional online. I design and build modern websites for small businesses. Every project starts with your goals and ends with a site that looks distinct. I give each site my full attention.</p>
+<p class="about" style="margin-top:1.4rem;font-weight:800;font-size:1.4rem" data-en="Need Money For Porsche" data-ar="أحتاج مالاً لشراء بورش">Need Money For Porsche</p>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2 data-en="Tell me about your project" data-ar="أخبرني عن مشروعك">Tell me about your project</h2>
+<a class="big" href="https://wa.me/201555922783" target="_blank" rel="noopener" data-en="WhatsApp" data-ar="واتساب">WhatsApp</a>
+<a class="big" href="mailto:lamsa.studio.web@gmail.com">lamsa.studio.web@gmail.com</a>
+<p class="note" style="margin:.8rem 0 0"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=lamsa.studio.web@gmail.com" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600" data-en="No mail app opens? Write to me in Gmail" data-ar="لم يفتح تطبيق البريد؟ راسلني عبر Gmail">No mail app opens? Write to me in Gmail</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap" data-en="© 2026 Lamsa Studio" data-ar="© 2026 لمسة ستوديو">© 2026 Lamsa Studio</div></footer>
+
+<script>
+window.addEventListener("load",function(){setTimeout(function(){try{var l=document.createElement("link");l.rel="stylesheet";l.href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Readex+Pro:wght@400;600&display=swap";document.head.appendChild(l)}catch(e){}},0)});
+</script>
+<script>
+(function(){
+var T=document.querySelectorAll("[data-en]"),btn=document.getElementById("lang"),hero=document.getElementById("hero");
+function setLang(l){
+document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";
+Array.prototype.forEach.call(T,function(e){e.textContent=e.getAttribute("data-"+l)});
+btn.textContent=l==="ar"?"English":"العربية";
+btn.setAttribute("aria-label",l==="ar"?"Switch to English":"التبديل إلى العربية");
+document.title=l==="ar"?"لمسة ستوديو":"Lamsa Studio";
+try{localStorage.setItem("lamsa-lang",l)}catch(e){}
+}
+var l=null;try{l=localStorage.getItem("lamsa-lang")}catch(e){}
+if(l!=="ar"&&l!=="en")l=(navigator.language||"").slice(0,2)==="ar"?"ar":"en";
+setLang(l);
+btn.addEventListener("click",function(){setLang(document.documentElement.lang==="ar"?"en":"ar")});
+function glow(x,y){var r=hero.getBoundingClientRect();hero.style.setProperty("--x",(x-r.left)+"px");hero.style.setProperty("--y",(y-r.top)+"px")}
+if(window.PointerEvent){hero.addEventListener("pointermove",function(e){glow(e.clientX,e.clientY)})}
+else{hero.addEventListener("touchmove",function(e){var t=e.touches[0];if(t)glow(t.clientX,t.clientY)},{passive:true})}
+})();
+</script>
+</body>
+</html>
